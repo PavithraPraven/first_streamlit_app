@@ -15,7 +15,7 @@ my_fruit_list = my_fruit_list.set_index('Fruit')
 
 # Let's put a pick list here so they can pick the fruit they want to include 
 fruits_selected=streamlit.text_input("Pick some fruits:", 'cantaloupe')
-fruits_to_show=streamlit.write(fruit_choice)
+streamlit.write(fruit_choice)
 my_cur.execute("insert into fruit_load_list values('from streamlit')")
 
 # Display the table on the page.
